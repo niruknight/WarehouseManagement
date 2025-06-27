@@ -1,0 +1,157 @@
+/* .dashboard {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section h2 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .hero-section p {
+    margin: 0;
+    font-size: 1.2em;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .cta-buttons {
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* This disables scrolling for the entire page */
+}
+
+.hero-section {
+    text-align: center;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    border-radius: 8px;
+    position: absolute; /* Changed to absolute positioning */
+    top: 60px; /* Adjust to align with the navbar height */
+    left: 240px; /* Adjust to align with the sidebar width */
+    right: 0; /* Remove right whitespace */
+    bottom: 0; /* Remove bottom whitespace */
+    overflow: hidden;
+    width: calc(100% - 240px); /* Adjust width to account for sidebar */
+    height: calc(100vh - 60px); /* Adjust height to account for navbar */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.hero-section h2 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-section p {
+    margin: 0;
+    font-size: 1.5em;
+    animation: fadeInUp 1s ease-out;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

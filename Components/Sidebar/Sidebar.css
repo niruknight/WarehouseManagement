@@ -1,0 +1,58 @@
+.sidebar {
+    position: fixed;
+    top: 0; /* Changed from 60px to 0 to align with the top of the page */
+    left: 0;
+    width: 240px; /* Ensure this matches the sidebar width in layout.css */
+    height: 100vh; /* Changed to full viewport height */
+    background: linear-gradient(180deg, #003366, #0055aa);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+    padding-top: 60px; /* Adjust padding-top to account for navbar height */
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    z-index: 998; /* Set slightly lower than navbar's z-index */
+}
+
+.sidebar h2 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 14px 22px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(6px);
+}
+
+.sidebar a svg {
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.sidebar a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}

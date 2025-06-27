@@ -1,0 +1,195 @@
+.product-management {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  
+}
+
+
+
+
+
+.layout {
+  display: flex;
+  flex-grow: 1;
+  
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  /* Remove these lines to enable scrollbars */
+  /* scrollbar-width: none;
+  -ms-overflow-style: none; */
+}
+
+/* Remove this rule to show scrollbars
+.sidebar::-webkit-scrollbar {
+  display: none;
+} */
+
+.sidebar h2 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #e0e0e0;
+}
+
+.option i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  /* Remove these lines to enable scrollbars */
+  /* scrollbar-width: none;
+  -ms-overflow-style: none; */
+  height: calc(100vh - 60px); /* Set a fixed height to ensure scrolling works */
+}
+
+/* Remove this rule to show scrollbars
+.main-content::-webkit-scrollbar {
+  display: none;
+} */
+
+.welcome-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.welcome-message h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.client-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-button {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.category-dropdown {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.scanner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-y: auto;
+  /* Remove these lines to enable scrollbars */
+  /* scrollbar-width: none;
+  -ms-overflow-style: none; */
+}
+
+/* Remove this rule to show scrollbars
+.scanner-container::-webkit-scrollbar {
+  display: none;
+} */
+
+.scanned-data {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Back button styles */
+.back-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button i {
+  margin-right: 5px;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .option {
+    width: calc(50% - 10px);
+  }
+}
+
+
+
+  

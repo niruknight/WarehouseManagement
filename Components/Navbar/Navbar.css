@@ -1,0 +1,76 @@
+/* .navbar {
+    background-color: #007bff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .nav-link svg {
+    margin-right: 8px;
+  } */
+
+  .navbar {
+    background-color: #007bff;
+    height: 60px;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.user-info {
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    margin-left: auto; /* This moves the button to the right side */
+    margin-right: 24px; /* Add some space from the right edge */
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}

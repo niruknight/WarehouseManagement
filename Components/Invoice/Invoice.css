@@ -1,0 +1,134 @@
+/* Main Invoice Container */
+.invoice-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: calc(100vh - 180px); /* Adjusted height to fit viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section - Made more compact */
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.invoice-header h2 {
+  margin: 0;
+  color: #2e7d32;
+  font-size: 22px; /* Slightly smaller */
+}
+
+/* Customer Info - More condensed */
+.customer-info {
+  margin-bottom: 15px;
+}
+
+.customer-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.customer-info p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+/* Items Table - Optimized for space */
+.invoice-items {
+  flex: 1;
+  min-height: 0; /* Allows table to shrink */
+  overflow: hidden;
+}
+
+.invoice-items h3 {
+  margin: 10px 0 8px 0;
+  font-size: 16px;
+}
+
+.invoice-items table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed; /* Ensures consistent column widths */
+}
+
+.invoice-items th, 
+.invoice-items td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  word-wrap: break-word; /* Prevents text overflow */
+}
+
+.invoice-items th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+/* Footer with Payment Button - Always visible */
+.invoice-footer {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.invoice-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.payment-button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevents button text wrapping */
+}
+
+.download-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-height: 700px) {
+  .invoice-container {
+    height: calc(100vh - 140px);
+    padding: 15px;
+  }
+  
+  .invoice-items table {
+    font-size: 12px;
+  }
+  
+  .payment-button,
+  .download-button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* For very small screens - table column adjustments */
+@media (max-width: 600px) {
+  .invoice-items th:nth-child(3),
+  .invoice-items td:nth-child(3) {
+    display: none; /* Hide less important columns */
+  }
+}

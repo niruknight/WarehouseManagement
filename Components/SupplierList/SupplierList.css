@@ -1,0 +1,157 @@
+/* .supplier-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.supplier-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.supplier-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.supplier-header h3 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.supplier-contact {
+  color: #666;
+  margin-right: 15px;
+}
+
+.expand-icon {
+  font-size: 12px;
+  color: #666;
+}
+
+.supplier-details {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.products-table th,
+.products-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.products-table th {
+  background-color: #f2f2f2;
+  font-weight: 500;
+}
+
+.low-stock {
+  background-color: #fff3f3;
+}
+
+.no-suppliers {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+} */
+
+
+.supplier-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.supplier-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.supplier-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.supplier-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.supplier-header h3 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.supplier-contact {
+  color: #666;
+  margin-right: 15px;
+}
+
+.expand-icon {
+  font-size: 12px;
+  color: #666;
+}
+
+.supplier-details {
+  padding: 15px;
+  border-top: 1px solid #eee;
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.supplier-details::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.products-table th,
+.products-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.products-table th {
+  background-color: #f2f2f2;
+  font-weight: 500;
+}
+
+.low-stock {
+  background-color: #fff3f3;
+}
+
+.no-suppliers {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+}

@@ -1,0 +1,10 @@
+.charts-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .pie-chart, .bar-chart {
+    margin: 20px;
+  }
+  

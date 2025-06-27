@@ -1,0 +1,45 @@
+.bulk-operations {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .bulk-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .bulk-category-change, .bulk-price-update {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bulk-category-change input, .bulk-price-update input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .bulk-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .bulk-actions button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  

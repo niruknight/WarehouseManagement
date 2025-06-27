@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* This disables scrolling for the entire page */
+}
+
+.layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-layout {
+    display: flex;
+    flex: 1;
+    margin-top: 60px; /* Adjust based on navbar height */
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 240px; /* Ensure this matches the sidebar width in sidebar.css */
+    background-color: #f8f9fa;
+    height: calc(100vh - 60px); /* Full height minus navbar */
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.content-area {
+    margin-left: 240px; /* Ensure this matches the sidebar width */
+    padding: 0; /* Remove padding to eliminate gaps */
+    flex: 1;
+    height: calc(100vh - 60px);
+    overflow: hidden; /* Disable scrolling */
+    background-color: #f4f6f9;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .content-area {
+        margin-left: 180px; /* Ensure this matches the sidebar width */
+        padding: 0; /* Remove padding to eliminate gaps */
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        display: none; /* Hide sidebar on small screens if needed */
+    }
+
+    .content-area {
+        margin-left: 0;
+        padding: 0; /* Remove padding to eliminate gaps */
+    }
+}
